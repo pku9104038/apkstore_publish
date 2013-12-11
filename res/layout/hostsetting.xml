@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide" >
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="网络设置"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+    
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="提交" />
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:ems="10"
+        android:textColor="@color/TEXT" />
+    <TextView
+        android:id="@+id/textViewPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPort"
+        android:layout_alignLeft="@+id/editTextPort"
+        android:text="Http端口："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+    <EditText
+        android:id="@+id/editTextSocketPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewPort"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:ems="10"
+        android:textColor="@color/TEXT" />
+    <TextView
+        android:id="@+id/textViewSocketPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSocketPort"
+        android:layout_alignLeft="@+id/editTextPort"
+        android:text="Socket端口："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+    <EditText
+        android:id="@+id/editTextHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewSocketPort"
+        android:layout_alignLeft="@+id/textViewPort"
+        android:layout_marginBottom="20dip"
+        android:ems="10"
+        android:textColor="@color/TEXT" />
+    <TextView
+        android:id="@+id/textViewHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextHost"
+        android:layout_alignLeft="@+id/editTextHost"
+        android:text="主机："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+
+</RelativeLayout>

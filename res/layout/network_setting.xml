@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPopWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/bg_guide" >
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_down1"
+            android:contentDescription="@string/cancel"
+            android:src="@drawable/btn_down1"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageButtonBack"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/separator"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayoutSeparator"
+            android:layout_centerHorizontal="true"
+            android:text="网络设置"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutSeparator"
+            android:layout_below="@+id/linearLayoutSeparator"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewHost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主机："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textViewPort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Http端口："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editTextPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textViewSocketPort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socket端口："
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextSocketPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dip"
+            android:text="@string/set" />
+
+        <Button
+            android:id="@+id/buttonApkCompare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="APK比较" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

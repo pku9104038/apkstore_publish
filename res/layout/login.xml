@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="用户登录"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="登录" />
+    
+    <EditText
+        android:id="@+id/editTextPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/TEXT" />
+
+    <TextView
+        android:id="@+id/textViewPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTextPwd"
+        android:layout_alignLeft="@id/editTextPwd"
+        android:layout_marginTop="18dp"
+        android:text="密码："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+
+    <EditText
+        android:id="@+id/editTextAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewPwd"
+        android:layout_alignLeft="@+id/textViewPwd"
+        android:layout_marginBottom="20dip"
+        android:ems="10"
+        android:textColor="@color/TEXT" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAccount"
+        android:layout_alignLeft="@+id/editTextAccount"
+        android:text="帐号："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TEXT" />
+
+</RelativeLayout>

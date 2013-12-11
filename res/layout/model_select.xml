@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ActivityCategorySelect" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLeftMargin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="10" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutCenterHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutTopCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTopMargin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="19" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayoutPopWindow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_guide"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/imageButtonBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/btn_down1"
+                        android:src="@drawable/btn_down1"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center_vertical"
+                        android:text="机型选择"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/separator"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <LinearLayout
+                        android:id="@+id/linearLayoutButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" >
+
+                        <Button
+                            android:id="@+id/buttonSet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:text="@string/set" />
+
+                        <Button
+                            android:id="@+id/buttonCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:text="@string/cancel"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <FrameLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" 
+	                    android:layout_above="@+id/linearLayoutButtons"
+                        >
+	
+                     	<ListView
+	                        android:id="@+id/listView"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:layout_marginLeft="4dip"
+	                        android:layout_marginRight="4dip"
+	                        android:cacheColorHint="#00000000" >
+
+                    	</ListView>
+
+                     	<ProgressBar
+                     	    android:id="@+id/progressBar"
+                     	    android:layout_width="match_parent"
+                     	    android:layout_height="wrap_content" />
+                        
+                    </FrameLayout>
+                    
+                        
+                    
+                    
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBottomMargin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRightMargin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="10" >
+    </RelativeLayout>
+
+</LinearLayout>
